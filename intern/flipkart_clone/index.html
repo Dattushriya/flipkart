@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone - Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body bgcolor="blue">
+    <header>
+        <h1> Flipkart </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/fridge.jpg" alt="Fridge">
+                    <h3>Fridge</h3>
+                    <p>Price: $499.99</p>
+                    <button onclick="addToCart('fridge')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/home.jpg" alt="Home Appliance">
+                    <h3>Home Appliance</h3>
+                    <p>Price: $299.99</p>
+                    <button onclick="addToCart('home-appliance')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/start at149.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: $149.00</p>
+                    <button onclick="addToCart('product-1')">Add to Cart</button>
+                </div>
+                <!-- Additional products can be added here -->
+            </div>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <p>Electronics</p>
+                <p>Home Appliances</p>
+                <p>Furniture</p>
+                <!-- Additional categories can be added here -->
+            </div>
+        </section>
+        <section id="promotions">
+            <h2>Promotional Banners</h2>
+            <div class="banner-list">
+                <p>Check out our latest offers!</p>
+                <!-- Additional promotional banners can be added here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Flipkart . All rights reserved.</p>
+    </footer>
+</body>
+</html>

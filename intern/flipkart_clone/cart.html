@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Flipkart Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-list">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+        </section>
+        <section id="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Flipkart Clone. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to display cart items
+        function displayCartItems() {
+            const cartList = document.getElementById('cart-list');
+            cartList.innerHTML = ''; // Clear existing items
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.textContent = item; // Display item name
+                cartList.appendChild(itemElement);
+            });
+        }
+
+        // Call displayCartItems to show items when the page loads
+        displayCartItems();
+    </script>
+</body>
+</html>
